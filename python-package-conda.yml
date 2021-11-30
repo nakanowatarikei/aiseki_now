@@ -18,10 +18,8 @@ jobs:
       - name: Install dependencies # Pythonの依存環境のインストール
         run: | #このような書き方で複数行を一気に実行することができる。
           python -m pip install --upgrade pip
-          pip install pandas
-          pip install pytz
-          pip install matplotlib
-          pip install numpy
+          pip install requests
+          pip install lxml
 
       - name: Run get.py # Pythonファイルの実行
         run: |
